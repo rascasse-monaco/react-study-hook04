@@ -5,12 +5,12 @@ const Example = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
     const effect = document.getElementById('effect');
-    effect.innerHTML = `この部分はuseEffectが描画:You Clicked ${count} times.`;
+    effect.innerHTML = `useEffectが描画:You Clicked ${count} times.`;
   });
 
   return (
     <div>
-      <p>この部分は関数のreturnのJSXに記述して描画:You Clicked {count} times</p>
+      <p>関数のreturnのJSXに記述して描画:You Clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
